@@ -2,48 +2,168 @@
 
 
 .plus-jakarta-sans {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* shared style */
-.display-flex{
+.display-flex {
     display: flex;
 }
 
+.text-color-primary {
+    color: #FF900E;
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    padding: 21px 24px 20px 25px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+
+}
 
 /* dark 02 */
-.text-gray{
+.text-gray {
     color: #424242;
 }
 
 
 /* dark 03 */
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
-.bg-light{
+
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
+}
+
+Main {
+    max-width: 1440px;
+    margin: 0px auto;
 }
 
 /* heading style */
 
 /* navber related style */
-.nav-item{
+.nav-item {
     list-style: none;
-    margin-right: 30px ;
+    margin-right: 30px;
 }
-.nav-links{
+
+.nav-links {
     text-decoration: none;
     font-size: 18px;
-    line-height:28px ;
+    line-height: 28px;
     font-weight: 20px;
 }
-.navber{
+
+.navber {
     justify-content: space-between;
+    align-items: center;
 }
-.navber, .banner{
+
+.navber,
+.banner {
     max-width: 1440px;
     margin: 0px auto;
+}
+
+.brand {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.banner-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.banner-content {
+    font-size: 16px;
+}
+
+.banner-img img {
+    width: 100%;
+    max-width: 1440px;
+    height: 700px;
+    border-radius: 8px;
+}
+
+.banner-img {
+    padding: 50px 100px 45px 100px;
+}
+
+
+/* Main section style starts here */
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.sec-banner-img {
+    width: 100%;
+    height: 342px;
+    border-radius: 8px;
+}
+
+.sec-banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 73px;
+}
+
+.sec-banner-container h2 {
+    font-size: 45px;
+    margin-bottom: 24px;
+}
+
+.sec-banner-container p {
+    margin-bottom: 32px;
+}
+
+.first-section-of-main {
+    padding: 120px;
+}
+
+
+@media screen and (max-width:576px) {
+
+    /* navbar */
+    .navber {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item {
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .paragraph {
+        padding: 0px 10px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        max-width: 1440px;
+        height: 400px;
+        border-radius: 8px;
+    }
+
+
+    /* first-section-of-menu */
+    
 }
